@@ -138,10 +138,12 @@ bool _obscuoreConfirm=true;
 //End Text box Phone ******************************************************************
                     SizedBox(height:15,),
 //End text box email @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                    
+                  
                     TextFormField(
+                    
                       keyboardType: TextInputType.emailAddress,
                       controller: Email,
-                      decoration: InputDecoration(
+                      decoration: InputDecoration(helperText: "you must enter a coruect email",
                        labelText: "Email",
                        border: OutlineInputBorder(),
                        //when text in box label

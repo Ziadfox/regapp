@@ -31,7 +31,9 @@ int Itemcount=1;
               child: Container(
                 width: double.infinity,
                 color:Colors.deepPurple,
-                child: TextButton(child: Text("+"),onPressed: (){
+                child: TextButton(child: Text("+",style: TextStyle(color: Colors.white,
+                fontSize: 40
+                ),),onPressed: (){
                   _addItem();
                   
                 }),
@@ -61,7 +63,7 @@ int Itemcount=1;
       child: Card(
         elevation: 2,
         child: ListTile(
-          title: Text("item:$i",
+          title: Text("item",
           style: TextStyle(
             fontWeight: FontWeight.w600,
           ),
